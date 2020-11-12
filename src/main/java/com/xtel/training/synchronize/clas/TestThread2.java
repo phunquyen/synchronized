@@ -1,6 +1,6 @@
-package com.xtel.training.synchronize;
+package com.xtel.training.synchronize.clas;
 
-public class TestThread {
+public class TestThread2 {
     public static void main(String[] args) {
         MyThread t1 = new MyThread("Thread 1_1", 1);
         MyThread t2 = new MyThread("Thread 1_2", 10);
@@ -11,7 +11,7 @@ public class TestThread {
     }
 
     static class Table {
-        synchronized static void print(String name, int n) {
+         static void print(String name, int n) {
             for (int i = 1; i <= 5; i++)
                 System.out.println(name + ": " + i * n);
         }
